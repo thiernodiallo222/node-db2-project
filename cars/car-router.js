@@ -39,7 +39,7 @@ router.post("/", async (req, res, next) => {
             transmission: req.body.transmission,
             clean: req.body.clean,
             salvage: req.body.salvage,
-            rebuilt: req.body.rebuilt,
+            rebuilt: req.body.rebuilt
 		}
 
 		// translates to `INSERT INTO "cars" ("name", "budget") VALUES (?, ?);`
