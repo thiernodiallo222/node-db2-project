@@ -32,7 +32,7 @@ router.get("/:id", async (req, res, next) => {
 router.post("/", async (req, res, next) => {
 	try {
 		const payload = {
-			VIN: req.body.VIN,
+			vin: req.body.VIN,
             make: req.body.make,
             model: req.body.model,
             mileage: req.body.mileage,

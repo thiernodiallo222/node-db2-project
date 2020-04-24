@@ -6,7 +6,7 @@ const carRouter = require("./cars/car-router")
 const server = express()
 const port = process.env.PORT || 5000
 
-server.use(helmet())
+// server.use(helmet())
 server.use(express.json())
 
 server.use("/", welcomeRouter)
