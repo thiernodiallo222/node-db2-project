@@ -55,8 +55,14 @@ router.post("/", async (req, res, next) => {
 router.put("/:id", async (req, res, next) => {
 	try {
 		const payload = {
-			name: req.body.name,
-			budget: req.body.budget,
+			vin: req.body.VIN,
+            make: req.body.make,
+            model: req.body.model,
+            mileage: req.body.mileage,
+            transmission: req.body.transmission,
+            clean: req.body.clean,
+            salvage: req.body.salvage,
+            rebuilt: req.body.rebuilt
 		}
 
 		// translates to `UPDATE "cars" SET "name" = ? AND "budget" = ? WHERE "id" = ?;`
