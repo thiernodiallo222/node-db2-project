@@ -1,7 +1,7 @@
 const express = require("express")
 const helmet = require("helmet")
 const welcomeRouter = require("./welcome");
-const carRouter = require("./data/car-router")
+const carRouter = require("./cars/car-router")
 
 const server = express()
 const port = process.env.PORT || 5000
