@@ -32,7 +32,7 @@ router.get("/:id", async (req, res, next) => {
 router.post("/", async (req, res, next) => {
 	try {
 		const payload = {
-			vin: req.body.VIN,
+			vin: req.body.vin,
             make: req.body.make,
             model: req.body.model,
             mileage: req.body.mileage,
@@ -55,7 +55,7 @@ router.post("/", async (req, res, next) => {
 router.put("/:id", async (req, res, next) => {
 	try {
 		const payload = {
-			vin: req.body.VIN,
+			vin: req.body.vin,
             make: req.body.make,
             model: req.body.model,
             mileage: req.body.mileage,

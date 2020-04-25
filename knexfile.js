@@ -6,5 +6,11 @@ module.exports = {
 	connection: {
 		filename: "./data/cars-dealer.db3", // location of our database file
 	},
+	 migrations: {
+      directory: './data/migrations'
+    },
+    seeds: {
+      directory: './data/seeds'
+    }
 }
 
